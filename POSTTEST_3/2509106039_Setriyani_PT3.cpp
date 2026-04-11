@@ -47,8 +47,8 @@ void garis(char c = '-', int panjang = 60) {
 
 void headerProgram() {
     garis('=');
-    cout << setw(40) << "  PAWCARE PETSHOP" << endl;
-    cout << setw(45) << "  Sistem Manajemen Hewan Peliharaan" << endl;
+    cout << "                    PAWCARE PETSHOP" << endl;
+    cout << "            Sistem Manajemen Hewan Peliharaan" << endl;
     garis('=');
 }
 
@@ -349,12 +349,11 @@ void inisialisasiData(Hewan* &arr, int &n) {
     };
     n = 5;
     for (int i = 0; i < n; i++) arr[i] = dataAwal[i];
-    cout << "  Data awal berhasil dimuat (" << n << " hewan).\n";
 }
 
 void tampilMenu() {
     cout << "\n"; garis('=');
-    cout << "         MENU UTAMA - PAWCARE PETSHOP\n"; garis('=');
+    cout << "          MENU UTAMA - PAWCARE PETSHOP\n"; garis('=');
     cout << "  --- DATA HEWAN ---\n";
     cout << "  1. Tampil Semua Data Hewan\n";
     cout << "  2. Tambah Data Hewan Baru\n";
@@ -363,13 +362,13 @@ void tampilMenu() {
     cout << "  5. Bubble Sort      (urutin berdasarkan Nama A-Z)\n";
     cout << "  6. Selection Sort   (urutkan berdasarkan Harga)\n";
     cout << "  --- ANTRIAN & RIWAYAT ---\n";
-    cout << "  7.  Daftar ke Antrian (Enqueue)\n";
-    cout << "  8.  Panggil Pasien    (Dequeue)\n";
-    cout << "  9.  Hapus Riwayat Terakhir (Pop)\n";
+    cout << "  7.  Daftar ke Antrian  (Enqueue)\n";
+    cout << "  8.  Panggil Pasien     (Dequeue)\n";
+    cout << "  9.  Hapus Riwayat      (Pop)\n";
     cout << "  10. Peek Antrian & Riwayat\n";
     cout << "  11. Tampil Semua Antrian\n";
     cout << "  12. Tampil Semua Riwayat\n";
-    cout << "  0. Keluar\n";
+    cout << "  0.  Keluar\n";
     garis('='); cout << "  Pilih menu: ";
 }
 
@@ -397,7 +396,7 @@ int main() {
             case 12: tampilRiwayat(&riwayatTindakan); break;
             case 0:
                 cout << "\n"; garis('=');
-                cout << "  Maksih udah gunain PAWCARE PETSHOP\n";
+                cout << "  Maksih telah menggunakan PAWCARE PETSHOP\n";
                 cout << "  Bye byee!\n"; garis('='); break;
             default: cout << "\n  Pilihan ga valid bozz. Coba lagi.\n"; break;
         }
